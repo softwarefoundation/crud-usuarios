@@ -9,4 +9,21 @@ export class ButtonComponent {
 
   @Input() textButton: string = 'LOGIN';
 
+  constructor() {
+    console.log('Componente constrído');
+  }
+
+  ngOnChanges(){
+    console.log('Componente Change');
+  }
+
+  ngOnInit(){
+    console.log('Componente init')
+  }
+
+  ngDoCheck(){
+    console.log('Componente Check')
+  }
+  
+
 }
