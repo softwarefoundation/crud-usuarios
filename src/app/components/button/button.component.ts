@@ -8,6 +8,7 @@ import {Component, Input} from '@angular/core';
 export class ButtonComponent {
 
   @Input() textButton: string = 'LOGIN';
+  @Input() size: string = 'auto';
 
   constructor() {
     console.log('Componente constrído');
