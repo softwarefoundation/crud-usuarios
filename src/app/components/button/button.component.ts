@@ -24,6 +24,6 @@ export class ButtonComponent {
   ngDoCheck(){
     console.log('Componente Check')
   }
-  
+
 
 }
