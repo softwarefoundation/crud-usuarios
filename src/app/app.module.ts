@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import {MatIconModule} from "@angular/material/icon";
+import {MatProgressSpinner} from "@angular/material/progress-spinner";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatIconModule} from "@angular/material/icon";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinner
   ],
   providers: [
     provideAnimationsAsync()
