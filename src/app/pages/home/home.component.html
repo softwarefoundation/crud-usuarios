@@ -11,10 +11,11 @@
             <div class="col-12 col-md-8">
               <h1 class="titulo">CRUD Usuários</h1>
               <h3 class="subtitulo">
-                Mais eficiência na gestão dos usuários e de seus benefícios. Chega de sistemas antigos e sem
+                Mais eficiência na gestão dos <span>usuários</span> e de seus benefícios. Chega de sistemas antigos e
+                sem
                 usabilidade,
-                agora com o Crud Users seu trabalho fica até 3x mais rápido e simplificado.
-                Confira um resumo das informações em nosso Dashboard
+                agora com o <span>Crud Users</span> seu trabalho fica até 3x mais rápido e simplificado.
+                Confira um resumo das informações em nosso <span>Dashboard</span>
               </h3>
               <app-button routerLink="/usuarios" textButton="Iniciar"></app-button>
             </div>
@@ -89,15 +90,13 @@
     <div class="col-12 col-lg-3">
       <div class="card-info">
         <div class="container-perfil">
-          <img src="assets/img-perfil.png" class="img-perfil" width="100px">
+          <img src="assets/img-perfil.png" class="img-perfil">
           <h4>Seja bem vindo</h4>
-          <h5>Alice Tomas</h5>
-          <ul>
+          <h5>{{username}}</h5>
             <li>
               <mat-icon>location_on</mat-icon>
               SP - Brasil
             </li>
-          </ul>
         </div>
 
         <hr class="hr">

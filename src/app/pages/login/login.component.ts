@@ -8,15 +8,14 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent {
 
-  userName: string = '';
+  username: string = '';
 
 
   constructor(private router: Router) {
   }
 
   login() {
-    console.log(this.userName);
-    sessionStorage.setItem('user', this.userName);
+    sessionStorage.setItem('username', this.username);
     this.router.navigate(['home']);
   }
 }
