@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatProgressSpinner} from "@angular/material/progress-spinner";
     ButtonComponent,
     LoginComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
