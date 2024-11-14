@@ -14,6 +14,8 @@ import {MatProgressSpinner} from "@angular/material/progress-spinner";
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
+import {MatTable} from "@angular/material/table";
+import {MatPaginator} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatInput} from "@angular/material/input";
     MatProgressSpinner,
     MatFormField,
     MatLabel,
-    MatInput
+    MatInput,
+    MatTable,
+    MatPaginator
   ],
   providers: [
     provideAnimationsAsync()

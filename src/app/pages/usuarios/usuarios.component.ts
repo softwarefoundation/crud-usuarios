@@ -3,7 +3,7 @@ import {MatTableDataSource} from "@angular/material/table";
 import {Usuario} from "../../models/usuario";
 
 const ELEMENT_DATA: Usuario[] = [
-  {id: 1, username: 'Hydrogen', email: 'alice@gmail.com'}];
+  {id: 1, username: 'Hydrogen', email: 'alice@gmail.com', bloqueado: false}];
 
 @Component({
   selector: 'app-usuarios',
@@ -12,7 +12,7 @@ const ELEMENT_DATA: Usuario[] = [
 })
 export class UsuariosComponent {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'username', 'email'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   constructor() {
