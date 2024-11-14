@@ -23,6 +23,30 @@
       "username": "Nanda",
       "email": "nanda@gmail.com",
       "bloqueado": true
+    },
+    {
+      "id": 5,
+      "username": "Marta",
+      "email": "marta@gmail.com",
+      "bloqueado": true
+    },
+    {
+      "id": 6,
+      "username": "Rita",
+      "email": "rita@gmail.com",
+      "bloqueado": true
+    },
+    {
+      "id": 7,
+      "username": "Tommy",
+      "email": "tommy@gmail.com",
+      "bloqueado": false
+    },
+    {
+      "id": 8,
+      "username": "Bia",
+      "email": "bia@gmail.com",
+      "bloqueado": true
     }
   ],
   "estados": [
