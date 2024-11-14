@@ -1,2 +1,25 @@
 <app-menu></app-menu>
-<p>usuarios works!</p>
+
+<div class="container-fluid pt-3">
+
+  <div class="row">
+    <div class="col-12">
+      <h1 class="titulo">Cadastro de usuários</h1>
+      <h3 class="subtitulo">Gerencie usuaários, adicionando, alterando e removendo</h3>
+    </div>
+  </div>
+
+  <div class="row pt-2">
+    <div class="col-12">
+      <app-button textButton="+ cadastrar" class="float-end" ></app-button>
+
+      <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex.: texto" #input/>
+      </mat-form-field>
+
+    </div>
+  </div>
+
+</div>
+

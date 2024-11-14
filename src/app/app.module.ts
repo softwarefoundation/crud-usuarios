@@ -12,6 +12,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import {MatFormField, MatLabel} from "@angular/material/form-field";
+import {MatInput} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,10 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
     AppRoutingModule,
     FormsModule,
     MatIconModule,
-    MatProgressSpinner
+    MatProgressSpinner,
+    MatFormField,
+    MatLabel,
+    MatInput
   ],
   providers: [
     provideAnimationsAsync()
