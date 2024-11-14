@@ -1,16 +1,28 @@
 {
   "usuarios": [
     {
-      "username": "Bob"
+      "id": 1,
+      "username": "Bob",
+      "email": "bob@gmail.com",
+      "bloqueado": true
     },
     {
-      "username": "Alice"
+      "id": 2,
+      "username": "Alice",
+      "email": "alice@gmail.com",
+      "bloqueado": true
     },
     {
-      "username": "Thomas"
+      "id": 3,
+      "username": "Thomas",
+      "email": "thomas@gmail.com",
+      "bloqueado": false
     },
     {
-      "username": "Nanda"
+      "id": 4,
+      "username": "Nanda",
+      "email": "nanda@gmail.com",
+      "bloqueado": true
     }
   ],
   "estados": [

@@ -22,31 +22,23 @@
 
         <table mat-table [dataSource]="dataSource" matSort>
 
-          <!-- ID Column -->
           <ng-container matColumnDef="id">
             <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>Código</th>
             <td class="td-table" mat-cell *matCellDef="let usuario"> {{usuario.id}} </td>
           </ng-container>
 
-          <!-- Progress Column -->
           <ng-container matColumnDef="username">
             <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
             <td class="td-table" mat-cell *matCellDef="let row"> {{row.username}}</td>
           </ng-container>
 
-          <!-- Name Column -->
           <ng-container matColumnDef="email">
             <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>E-mail</th>
             <td class="td-table" mat-cell *matCellDef="let row"> {{row.email}} </td>
           </ng-container>
 
-          <ng-container matColumnDef="email">
-            <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
-            <td class="td-table" mat-cell *matCellDef="let row"> {{row.email}} </td>
-          </ng-container>
-
           <ng-container matColumnDef="bloqueado">
-            <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>Qloqueado</th>
+            <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header>Bloqueado</th>
             <td class="td-table" mat-cell *matCellDef="let usuario">
               <mat-icon class="c-primary" *ngIf="usuario.bloqueado">check</mat-icon>
               <mat-icon class="c-erros" *ngIf="!usuario.bloqueado">remove</mat-icon>
@@ -65,7 +57,6 @@
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
-          <!-- Row shown when there is no matching data. -->
           <tr class="mat-row" *matNoDataRow>
             <td class="mat-cell no-data" colspan="4">Não encontrados registros "{{input.value}}"</td>
           </tr>
